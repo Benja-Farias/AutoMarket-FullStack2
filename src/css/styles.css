@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand {
+  font-family: 'Arial Black', sans-serif;
+  letter-spacing: -1px;
+}
+.navbar .nav-link {
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+.navbar .nav-link:hover { color: #0d6efd !important; }
+.navbar .btn-outline-primary { font-size: 0.95rem; }
+
+/* ---------- Banner ---------- */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/images/banner-elitecars-BXf7npVn.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.banner-content { color: #fff; max-width: 800px; }
+.banner-content h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+.banner-content p { font-size: 1.2rem; margin-bottom: 2rem; color: #e0e0e0; }
+.btn-banner {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-banner:hover { background-color: #0056b3; color: #fff; transform: translateY(-3px); }
+
+@media (max-width: 576px) {
+  .banner-content h1 { font-size: 2.4rem; }
+}
+
+/* ---------- Tarjetas de vehículos ---------- */
+.card-img-top { height: 200px; object-fit: cover; }
+
+/* ---------- Carrusel ---------- */
+.carrusel-control { width: auto; }
+.carrusel-control.carousel-control-prev { left: -3rem; }
+.carrusel-control.carousel-control-next { right: -3rem; }
+.carrusel-boton { width: 40px; height: 40px; }
+.carrusel-icono { width: 1rem; height: 1rem; }
+@media (max-width: 991px) {
+  .carrusel-control.carousel-control-prev { left: 0; }
+  .carrusel-control.carousel-control-next { right: 0; }
+}
+
+/* ---------- Filtros ---------- */
+.filtros-sticky { top: 1rem; }
+
+/* ---------- Formularios (login, registro, contacto) ---------- */
+.form-card { max-width: 560px; }
+
+/* ---------- Footer ---------- */
+.footer { background-color: #1a1a1a; color: #fff; padding-top: 3rem; margin-top: 2rem; }
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-column { flex: 1; min-width: 250px; }
+.footer-column h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #007bff; }
+.footer-column h4 { font-size: 1.2rem; margin-bottom: 1rem; }
+.footer-column p { color: #ccc; line-height: 1.6; margin-bottom: 0.5rem; }
+.footer-column ul { list-style: none; padding: 0; }
+.footer-column ul li { margin-bottom: 0.5rem; }
+.footer-column ul li a { color: #ccc; text-decoration: none; transition: color 0.3s ease, padding-left 0.3s ease; }
+.footer-column ul li a:hover { color: #fff; padding-left: 5px; }
+.footer-bottom { background-color: #111; text-align: center; padding: 1.5rem 0; margin-top: 2rem; border-top: 1px solid #333; }
+.footer-bottom p { color: #888; font-size: 0.9rem; margin: 0; }
