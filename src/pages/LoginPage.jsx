@@ -12,7 +12,7 @@ export default function LoginPage() {
             <h1 className="h3 fw-bold mb-4">Iniciar sesión</h1>
             <LoginForm
               onLogin={({ correo, password }) => loginUser(correo, password)}
-              onSuccess={() => setTimeout(() => navigate('/'), 800)}
+              onSuccess={() => setTimeout(() => window.location.href = '/', 800)}
             />
           </div>
         </div>

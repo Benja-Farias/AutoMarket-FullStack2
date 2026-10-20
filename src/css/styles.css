@@ -18,7 +18,7 @@ body {
 /* ---------- Banner ---------- */
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../assets/images/banner-elitecars-BXf7npVn.webp');
+    url('../assets/images/ban2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ body {
   .banner-content h1 { font-size: 2.4rem; }
 }
 
-/* ---------- Tarjetas de vehículos ---------- */
+/* ---------- Tarjetas ---------- */
 .card-img-top { height: 200px; object-fit: cover; }
 
 /* ---------- Carrusel ---------- */
@@ -67,7 +67,7 @@ body {
 /* ---------- Filtros ---------- */
 .filtros-sticky { top: 1rem; }
 
-/* ---------- Formularios (login, registro, contacto) ---------- */
+/* ---------- Formularios ---------- */
 .form-card { max-width: 560px; }
 
 /* ---------- Footer ---------- */

@@ -12,7 +12,7 @@ export default function Navbar({ usuario = null, onLogout = () => {} }) {
     <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
       <div className="container-fluid px-4 px-lg-5">
         <Link className="navbar-brand fw-bold fs-3 text-dark me-4" to="/">
-          Automotora
+          AutoMarket
         </Link>
 
         <button
