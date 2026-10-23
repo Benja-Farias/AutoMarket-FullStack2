@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import FormField from './FormField.jsx';
+import FormField from './FormularioField.jsx';
 import { validateSignup, hasErrors } from '../utils/validators.js';
 
 export default function SignupForm({ onRegister, onSuccess = () => {} }) {
@@ -34,7 +34,7 @@ export default function SignupForm({ onRegister, onSuccess = () => {} }) {
       <FormField id="nombre" label="Nombre" placeholder="Ej: Carolina" value={valores.nombre} onChange={handleChange} error={errores.nombre} />
       <FormField id="correo" label="Correo" type="email" placeholder="correo@gmail.com" value={valores.correo} onChange={handleChange} error={errores.correo} />
       <FormField id="password" label="Contraseña" type="password" placeholder="Mínimo 8 caracteres, letras y números" value={valores.password} onChange={handleChange} error={errores.password} />
-      <FormField id="confirmar" label="Repetir contraseña" type="password" value={valores.confirmar} onChange={handleChange} error={errores.confirmar} />
+      <FormField id="telefono" label="Teléfono (opcional)" type="tel" placeholder="+56 9 1234 5678" value={valores.telefono} onChange={handleChange} />
       <button type="submit" className="btn btn-primary w-100">Crear cuenta</button>
       {mensaje && (
         <div id="mensajeFinal" className={`alert alert-${mensaje.tipo} mt-3 mb-0`} role="alert">

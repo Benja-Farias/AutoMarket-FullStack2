@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import FormField from './FormField.jsx';
+import FormField from './FormularioField.jsx';
 import { validateContact, hasErrors } from '../utils/validators.js';
 
 const VACIO = { nombre: '', correo: '', comentario: '' };

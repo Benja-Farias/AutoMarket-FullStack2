@@ -6,7 +6,7 @@ const autos = [
   { id: 3, marca: 'Toyota', nombre: 'Toyota Yaris 2020', precio: 9000000, estado: 'Usado' },
 ];
 
-describe('filters (catálogo)', () => {
+describe('filters', () => {
   // PRUEBA 5
   it('filterProducts filtra por texto, marca y estado', () => {
     expect(filterProducts(autos, {}).length).toBe(3);

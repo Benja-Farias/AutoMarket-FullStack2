@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import FormField from './FormField.jsx';
+import FormField from './FormularioField.jsx';
 import { validateLogin, hasErrors } from '../utils/validators.js';
 
 export default function LoginForm({ onLogin, onSuccess = () => {} }) {
@@ -40,7 +40,7 @@ export default function LoginForm({ onLogin, onSuccess = () => {} }) {
         </div>
       )}
       <p className="text-center small mt-3 mb-0">
-        ¿No tienes cuenta? <Link to="/signup">Regístrate</Link>
+        ¿No tienes cuenta? <Link to="/registro">Regístrate</Link>
       </p>
     </form>
   );

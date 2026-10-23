@@ -1,5 +1,5 @@
 import Banner from '../components/Banner.jsx';
-import FeaturedCarousel from '../components/FeaturedCarousel.jsx';
+import FeaturedCarousel from '../components/CarruselHome.jsx';
 import { PRODUCTS } from '../data/products.js';
 
 export default function HomePage() {

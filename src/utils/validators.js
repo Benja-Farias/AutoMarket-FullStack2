@@ -2,7 +2,6 @@ export const DOMINIOS_PERMITIDOS = ['@duoc.cl', '@profesor.duoc.cl', '@gmail.com
 export const MAX_NOMBRE = 100;
 export const MAX_CORREO = 100;
 export const MAX_COMENTARIO = 500;
-export const MIN_PASSWORD = 8;
 
 const FORMATO_EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -24,13 +23,6 @@ export function validateEmail(correo = '') {
   return '';
 }
 
-export function validatePassword(password = '') {
-  if (password === '') return 'La contraseña es obligatoria.';
-  if (password.length < MIN_PASSWORD) return `La contraseña debe tener al menos ${MIN_PASSWORD} caracteres.`;
-  if (!/[A-Za-z]/.test(password) || !/\d/.test(password)) return 'La contraseña debe incluir letras y números.';
-  return '';
-}
-
 export function validateComment(comentario = '') {
   const valor = comentario.trim();
   if (valor === '') return 'El comentario es obligatorio.';
@@ -38,19 +30,25 @@ export function validateComment(comentario = '') {
   return '';
 }
 
+function correoSimple(correo = '') {
+  const valor = correo.trim();
+  if (valor === '') return 'El correo es obligatorio.';
+  if (!valor.includes('@')) return 'Ingresa un correo válido.';
+  return '';
+}
+
 export function validateLogin({ correo, password }) {
   return {
-    correo: validateEmail(correo),
+    correo: correoSimple(correo),
     password: password ? '' : 'La contraseña es obligatoria.',
   };
 }
 
-export function validateSignup({ nombre, correo, password, confirmar }) {
+export function validateSignup({ nombre, correo, password }) {
   return {
     nombre: validateName(nombre),
-    correo: validateEmail(correo),
-    password: validatePassword(password),
-    confirmar: password !== confirmar ? 'Las contraseñas no coinciden.' : '',
+    correo: correoSimple(correo),
+    password: password ? '' : 'La contraseña es obligatoria.',
   };
 }
 

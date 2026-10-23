@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
-import HomePage from './pages/HomePage.jsx';
-import CatalogPage from './pages/CatalogPage.jsx';
-import ContactPage from './pages/ContactPage.jsx';
+import HomePage from './pages/PaginaInicio.jsx';
+import CatalogPage from './pages/PaginaCatalogo.jsx';
+import ContactPage from './pages/PaginaContacto.jsx';
 import LoginPage from './pages/LoginPage.jsx';
-import SignupPage from './pages/SignupPage.jsx';
+import SignupPage from './pages/PaginaRegistro.jsx';
 
 function NotFound() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/catalogo" element={<CatalogPage />} />
           <Route path="/contacto" element={<ContactPage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/registro" element={<SignupPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

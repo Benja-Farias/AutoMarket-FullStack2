@@ -76,7 +76,7 @@ export default function Navbar({ usuario = null, onLogout = () => {} }) {
                   <NavLink className={claseLink} to="/login">Ingresar</NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link className="btn btn-outline-primary rounded-pill px-3 py-1 fw-medium d-inline-flex align-items-center gap-2" to="/signup">
+                  <Link className="btn btn-outline-primary rounded-pill px-3 py-1 fw-medium d-inline-flex align-items-center gap-2" to="/registro">
                     <i className="bi bi-person fs-5"></i>
                     <span>Regístrate</span>
                   </Link>

@@ -5,7 +5,7 @@ export default function Footer({ anio = new Date().getFullYear() }) {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h3>Automotora</h3>
+          <h3>AutoMarket</h3>
           <p>Tu mejor opción para comprar y vender vehículos de calidad en Chile.</p>
         </div>
 
@@ -28,7 +28,7 @@ export default function Footer({ anio = new Date().getFullYear() }) {
       </div>
 
       <div className="footer-bottom">
-        <p>© {anio} Automotora. Todos los derechos reservados.</p>
+        <p>© {anio} AutoMarket</p>
       </div>
     </footer>
   );

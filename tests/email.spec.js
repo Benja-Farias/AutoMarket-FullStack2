@@ -1,6 +1,6 @@
 import { validateEmail } from '../src/utils/validators.js';
 
-describe('validateEmail (utils/validators)', () => {
+describe('validateEmail', () => {
   // PRUEBA 1
   it('acepta correos de los dominios permitidos y rechaza el resto', () => {
     expect(validateEmail('ana@duoc.cl')).toBe('');

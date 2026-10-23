@@ -1,7 +1,7 @@
 import { registerUser, loginUser, SESSION_KEY } from '../src/utils/auth.js';
 import { createFakeStorage } from './helpers.js';
 
-describe('auth (inicio de sesión con storage simulado)', () => {
+describe('auth', () => {
   const usuario = { nombre: 'Carolina', correo: 'Caro@Gmail.com', password: 'clave1234' };
 
   // PRUEBA 2

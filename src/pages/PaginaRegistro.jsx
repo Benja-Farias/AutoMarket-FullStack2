@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import SignupForm from '../components/SignupForm.jsx';
+import SignupForm from '../components/RegistroFormulario.jsx';
 import { registerUser } from '../utils/auth.js';
 
 export default function SignupPage() {

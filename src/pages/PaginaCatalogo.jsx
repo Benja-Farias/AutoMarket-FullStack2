@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import CatalogFilters from '../components/CatalogFilters.jsx';
+import CatalogFilters from '../components/FiltrosCatalogo.jsx';
 import CarCard from '../components/CarCard.jsx';
 import { PRODUCTS } from '../data/products.js';
 import { FILTROS_INICIALES, filterProducts, sortProducts, getBrands } from '../utils/filters.js';
